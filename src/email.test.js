@@ -17,6 +17,6 @@ test('bananaucsc.edu', () => {
   expect(validateEmail('bananaucsc.edu')).toBeTruthy();
 });
 
-test('@com', () => {
+test('mn@@.com', () => {
   expect(validateEmail('bla')).toBeFalsy();
 });

@@ -13,10 +13,10 @@ test('@.com', () => {
   expect(validateEmail('@.com')).toBeFalsy();
 });
 
-test('bananaucsc.edu', () => {
+test('bananaucsc.edu@', () => {
   expect(validateEmail('bananaucsc.edu')).toBeFalsy();
 });
 
-test('mn@@.com', () => {
+test('@mn@.com', () => {
   expect(validateEmail('mn@@')).toBeFalsy();
 });

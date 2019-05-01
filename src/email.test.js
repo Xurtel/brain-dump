@@ -10,13 +10,13 @@ test('sluggy@gmail.com', () => {
 });
 
 test('@.com', () => {
-  expect(validateEmail('banana@ucsc.gov')).toBeFalsy();
+  expect(validateEmail('@.com')).toBeFalsy();
 });
 
 test('bananaucsc.edu', () => {
-  expect(validateEmail('bananaucsc.edu')).toBeTruthy();
+  expect(validateEmail('bananaucsc.edu')).toBeFalsy();
 });
 
 test('mn@@.com', () => {
-  expect(validateEmail('bla')).toBeFalsy();
+  expect(validateEmail('mn@@')).toBeFalsy();
 });

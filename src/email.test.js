@@ -9,14 +9,14 @@ test('sluggy@gmail.com', () => {
   expect(validateEmail('sluggy@gmail.com')).toBeTruthy();
 });
 
-test('banana@ucsc.gov', () => {
-  expect(validateEmail('banana@ucsc.gov')).toBeTruthy();
+test('@.com', () => {
+  expect(validateEmail('banana@ucsc.gov')).toBeFalsy();
 });
 
 test('bananaucsc.edu', () => {
   expect(validateEmail('bananaucsc.edu')).toBeTruthy();
 });
 
-test('bla', () => {
-  expect(validateEmail('bla')).toBeTruthy();
+test('@com', () => {
+  expect(validateEmail('bla')).toBeFalsy();
 });
